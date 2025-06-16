@@ -1,5 +1,5 @@
 # Customer Churn Prediction – Classification
----
+
 This project focuses on predicting customer churn using classification techniques. The goal is to identify customers who are likely to stop using a service, helping businesses take proactive steps to retain them.
 
 ## Problem Statement:
@@ -7,9 +7,9 @@ Customer churn directly affects business revenue. By predicting which customers 
 Project Overview
 
 ## Dataset:
-Source: Telco Customer Churn – Kaggle (https://www.kaggle.com/blastchar/telco-customer-churn)
+Source: Telco Customer Churn – Kaggle(https://www.kaggle.com/blastchar/telco-customer-churn)
 Includes: Customer demographics, contract details, services used, and billing info.
----
+
 ## Project Workflow
 ### Data Exploration: 
 Looked at feature types, shapes, and summary stats. Found that TotalCharges was numerical but stored as object.
@@ -36,7 +36,7 @@ Looked at feature types, shapes, and summary stats. Found that TotalCharges was 
 
 ### Threshold Optimization:
 - Tuned probability thresholds for better business-aligned results.
----
+
 ## Results Summary:  
 ### Model Variants:
 1. Default Model (No Balancing, All Features)
@@ -58,7 +58,7 @@ Highlights: Better at identifying churners, useful if reducing customer loss is 
 ## Business Alignment:
 - Use the Default Model if overall accuracy and stability are most important.
 - Use the Threshold-Optimized Model if the goal is to catch as many churners as possible, even at the cost of precision.
----
+
 
 ##  Model Comparison
 
@@ -76,7 +76,7 @@ Highlights: Better at identifying churners, useful if reducing customer loss is 
 - XGBoost
 - Matplotlib / Seaborn
 - imbalanced-learn (SMOTE, ADASYN)
----
+
 ###  License:
 The contents of this repository are my own work completed during my independent learning. Redistribution, use, or modification without explicit written permission is prohibited.
 
