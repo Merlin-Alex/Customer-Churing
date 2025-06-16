@@ -35,7 +35,7 @@ Looked at feature types, shapes, and summary stats. Found that TotalCharges was 
 - Other models like Random Forest, XGBoost, and SVM were also tested (see notebook for full details).
 
 ### Threshold Optimization:
-- Tuned probability thresholds for better business-aligned results.
+- Tuned probability thresholds for better business-aligned results. The threshold of 0.38 was chosen based on maximizing the F1-score from the precision-recall curve. This approach balances precision and recall to optimize the model’s ability to identify churners effectively.
 
 ## Results Summary:  
 ### Model Variants:
@@ -45,27 +45,27 @@ Looked at feature types, shapes, and summary stats. Found that TotalCharges was 
 - Precision (Churn): 0.70
 - Recall (Churn): 0.59
 - F1 Score (Churn class): 0.64
-Highlights: Best accuracy, balanced performance across classes.
+Highlights: Highest overall accuracy with balanced performance across both churn and non-churn classes.
 
  2. Threshold-Optimized Model (Threshold = 0.32)
 - Model: Logistic Regression
-- Accuracy: 78%
-- Precision (Churn): 0.57
-- Recall (Churn): 0.79
-- F1 Score (Churn): 0.66
-Highlights: Better at identifying churners, useful if reducing customer loss is top priority.
+- Accuracy: 81%
+- Precision (Churn): 0.62
+- Recall (Churn): 0.72
+- F1 Score (Churn): 0.67
+Highlights: Improved ability to identify churners (higher recall), making it valuable when reducing customer loss is the top priority.
 
 ## Business Alignment:
-- Use the Default Model if overall accuracy and stability are most important.
+- Use the Default Model if overall accuracy and stability are critical.
 - Use the Threshold-Optimized Model if the goal is to catch as many churners as possible, even at the cost of precision.
 
 
-##  Model Comparison
+##  Model Comparison for Logistic Regression(LR)
 
-| Model Variant             | Accuracy	| Precision (Churn)   | Recall (Churn)    | F1 Score (Churn)  |
+| Model Variant - LR        | Accuracy	| Precision (Churn)   | Recall (Churn)    | F1 Score (Churn)  |
 |---------------------------|-----------|---------------------|-------------------|-------------------|
 | Default Model             | 0.82      | 0.70                | 0.59              | 0.64              |
-| Threshold-Optimized Model | 0.78      | 0.57                | 0.79              | 0.66              |
+| Threshold-Optimized Model | 0.81      | 0.62                | 0.72              | 0.67              |
 
 > *Note: Metrics may vary based on data splits and random seed.*
 
