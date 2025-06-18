@@ -47,7 +47,7 @@ Looked at feature types, shapes, and summary stats. Found that TotalCharges was 
 - F1 Score (Churn class): 0.64
 Highlights: Highest overall accuracy with balanced performance across both churn and non-churn classes.
 
- 2. Threshold-Optimized Model (Threshold = 0.32)
+ 2. Threshold-Optimized Model (Threshold = 0.38)
 - Model: Logistic Regression
 - Accuracy: 81%
 - Precision (Churn): 0.62
