@@ -77,6 +77,32 @@ Highlights: Improved ability to identify churners (higher recall), making it val
 - Matplotlib / Seaborn
 - imbalanced-learn (SMOTE, ADASYN)
 
+## Deployment: FastAPI + Docker
+To make the churn prediction model accessible via a web API, the project includes:
+1. FastAPI:
+- A lightweight, high-performance web framework for serving ML models.
+- Exposes the model via a ```/predict``` endpoint.
+- Swagger UI available at ```http://localhost:8000/docs```
+
+2. Docker:
+- The entire FastAPI app is containerized using Docker.
+- This allows the API to run consistently across different environments without requiring local installation of Python or libraries.
+
+### To Run Locally with Docker:
+*bash*
+- ```cd Churn_API```
+- ```docker build -t churn-api .```
+- ```docker run -p 8000:8000 churn-api```
+- Then open your browser and go to ```http://localhost:8000/docs``` to interact with the model using Swagger UI.
+
+## Skills Demonstrated
+1. Exploratory Data Analysis and Data Cleaning
+2. Feature Selection & Handling Imbalanced Data
+3. Model Training & Threshold Optimization
+4. REST API Development with FastAPI
+5. Docker Containerization & Local Deployment
+6. Business-driven ML Decision Making
+
 ###  License:
 The contents of this repository are my own work completed during my independent learning. Redistribution, use, or modification without explicit written permission is prohibited.
 
