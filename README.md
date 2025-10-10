@@ -42,9 +42,9 @@ Looked at feature types, shapes, and summary stats. Found that TotalCharges was 
 1. Default Model (No Balancing, All Features)
 - Model: Logistic Regression
 - Accuracy: 82%
-- Precision (Churn): 0.70
-- Recall (Churn): 0.59
-- F1 Score (Churn class): 0.64
+- Precision (Churn): 0.69
+- Recall (Churn): 0.57
+- F1 Score (Churn class): 0.63
 Highlights: Highest overall accuracy with balanced performance across both churn and non-churn classes.
 
  2. Threshold-Optimized Model (Threshold = 0.38)
@@ -64,7 +64,7 @@ Highlights: Improved ability to identify churners (higher recall), making it val
 
 | Model Variant - LR        | Accuracy	| Precision (Churn)   | Recall (Churn)    | F1 Score (Churn)  |
 |---------------------------|-----------|---------------------|-------------------|-------------------|
-| Default Model             | 0.82      | 0.70                | 0.59              | 0.64              |
+| Default Model             | 0.82      | 0.69                | 0.57              | 0.63              |
 | Threshold-Optimized Model | 0.81      | 0.62                | 0.72              | 0.67              |
 
 > *Note: Metrics may vary based on data splits and random seed.*
